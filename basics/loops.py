@@ -50,3 +50,23 @@ for m in range(10):
   for n in range(10):
     print('#', end='')
   print(end='\n')
+
+
+# loop control statements
+# break, continue, pass (pass does nothing)
+
+# break
+for n in range(10):
+  if n == 5:
+    print('Hi!')
+    break
+  print(n)
+  n += 1
+
+# continue
+for n in range(10):
+  if n == 5:
+    print('Hi!')
+    continue
+  print(n)
+  n += 1
