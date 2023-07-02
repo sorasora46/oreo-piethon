@@ -28,3 +28,13 @@ food.sort()
 
 # clear a list
 food.clear()
+
+# 2D lists
+list_a = [5, 13, 34]
+list_b = ['hi', 'hello']
+lists_of_lists = [list_a, list_b]
+print(lists_of_lists)
+
+for list in lists_of_lists:
+   for item in list:
+    print('item in the list is', item)
