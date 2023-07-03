@@ -36,3 +36,16 @@ def add(*numbers):
   return sum
 
 print(add(5,12,34))
+
+# keyword arguments
+# **kwargs = packed all argument into map like taking all argument into json
+# need to have 2 asterisks (**)
+
+def func1(**kwargs):
+  x = kwargs.get('x')
+  y = kwargs.get('y')
+  z = kwargs.get('z')
+  print(kwargs.keys())
+  print('value of x y z', x, y, z)
+
+func1(x = 5, y = 10, z = 20)
