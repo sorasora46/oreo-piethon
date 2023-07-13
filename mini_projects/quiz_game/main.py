@@ -35,4 +35,11 @@ def play():
     score = calculate_score(user_ans)
     print('Your score is ' + str(score))
 
-play()
+def main():
+    while True:
+        play()
+        answer = input('Play again? (y/n): ')
+        if answer == 'n':
+            break
+
+main()
