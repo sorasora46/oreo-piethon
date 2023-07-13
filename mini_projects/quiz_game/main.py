@@ -30,7 +30,10 @@ def play():
         prompt_quiz(quizes[i])
         ans = 0
         while ans < 1 or ans > 4:
-            ans = int(input('Your answer: '))
+            try:
+                ans = int(input('Your answer: '))
+            except ValueError as err:
+                pass
         user_ans.append(ans)
     score = calculate_score(user_ans)
     print('Your score is ' + str(score))
@@ -39,7 +42,6 @@ def main():
     while True:
         play()
         answer = input('Play again? (y/n): ')
-        if answer == 'n':
+        if answer != 'y':
             break
-
 main()
